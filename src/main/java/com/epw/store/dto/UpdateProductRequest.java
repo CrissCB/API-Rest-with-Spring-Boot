@@ -20,7 +20,7 @@ public class UpdateProductRequest {
     @Size(max = 2000, message = "description must be <= 2000")
     private String description;
 
-    @DecimalMin(value = "0.0", inclusive = true)
+    @DecimalMin(value = "0.0", inclusive = false)
     private BigDecimal price;
 
     @Min(0)
